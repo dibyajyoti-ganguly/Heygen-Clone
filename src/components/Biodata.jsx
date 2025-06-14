@@ -1,4 +1,4 @@
-const Biodata = ({ videoRef }) => {
+const Biodata = () => {
   return (
     <div className="absolute z-10 w-3/10 ml-16 mt-28 font-noto">
       <p className="text-sm text-black font-handwriting font-black">
@@ -17,14 +17,7 @@ const Biodata = ({ videoRef }) => {
         the future.
       </p>
       <br />
-      <button
-        onClick={() => {
-          if (videoRef.current.muted) {
-            videoRef.current.muted = false;
-          } else videoRef.current.muted = true;
-        }}
-        className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white font-medium py-2 px-4 rounded-full flex items-center gap-2 cursor-pointer"
-      >
+      <button className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white font-medium py-2 px-4 rounded-full flex items-center gap-2 cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-4 w-4 fill-white"

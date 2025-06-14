@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
-import Herovideo from "../assets/HeroEnglish2.webm";
+import { useRef } from "react";
+import HerovideoEnglish from "../assets/HeroEnglish2.webm";
 import Biodata from "./Biodata";
+import Languages from "./Languages";
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -10,7 +11,7 @@ const Hero = () => {
       {/* Background video */}
       <video
         ref={videoRef}
-        src={Herovideo}
+        src={HerovideoEnglish}
         autoPlay
         muted
         loop
@@ -21,7 +22,8 @@ const Hero = () => {
       />
 
       {/* Overlay content */}
-      <Biodata videoRef={videoRef} />
+      <Biodata />
+      <Languages videoRef={videoRef} />
     </div>
   );
 };
