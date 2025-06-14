@@ -4,7 +4,7 @@ const Leftbar = () => {
   return (
     <div className="flex w-2/3 items-center">
       <img src={Logo} alt="Heygen Logo" />
-      <ul className="w-4/5 ml-2 flex justify-evenly font-noto font-medium text-lg">
+      <ul className="w-4/5 ml-8 flex justify-around font-noto font-medium text-lg">
         <li>Platform</li>
         <li>Solutions</li>
         <li>Resources</li>

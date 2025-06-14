@@ -3,7 +3,7 @@ import Rightbar from "./Rightbar";
 
 const Navbar = () => {
   return (
-    <div className="mx-6 mt-7 flex items-center">
+    <div className="ml-6 mt-7 mb-8 flex items-center">
       <Leftbar />
       <Rightbar />
     </div>
