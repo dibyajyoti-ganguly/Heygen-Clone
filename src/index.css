@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@import "tailwindcss"; /* everything in one line */
+
+@theme {
+  --font-handwriting: "Edu VIC WA NT Hand Pre", cursive, sans-serif;
+  --font-savate: "Savate", sans-serif;
+  --font-noto: "Noto Sans", sans-serif;
+  --font-micro: "Michroma", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+}
