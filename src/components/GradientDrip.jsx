@@ -1,6 +1,6 @@
 const GradientDrip = () => {
   return (
-    <div className="relative h-[400px] mx-4 md:mx-28 overflow-hidden bg-gradient-to-b from-gray-50 to-white">
+    <div className="relative h-[500px] mx-4 overflow-hidden bg-gradient-to-b from-gray-50 to-white">
       {/* Organic flowing gradient background */}
       <div className="absolute inset-0 z-0">
         {/* Main flowing shape */}
@@ -41,7 +41,7 @@ const GradientDrip = () => {
       </div>
 
       {/* Foreground Content */}
-      <div className="relative z-10 text-center pt-32 px-4 font-sans">
+      <div className="relative z-10 text-center pt-32 px-4 font-noto">
         <div className="flex items-center-safe justify-center gap-2 mb-3">
           <div className="w-2 h-2 bg-violet-500 rounded-full"></div>
           <p className="text-lg text-zinc-500 font-semibold">AI Avatars</p>
@@ -52,6 +52,16 @@ const GradientDrip = () => {
 
         <p className="text-3xl font-semibold text-gray-800 max-w-2xl mx-auto tracking-tighter">
           Clone Yourself, Pick a Stock Avatar or Generate a New Avatar with AI.
+        </p>
+      </div>
+
+      <div className="absolute z-10 mx-36 bottom-12 font-noto w-[550px] text-shadow-xs">
+        <p>
+          <span className="font-bold">
+            The most realistic avatars ever created.
+          </span>{" "}
+          Designed to be customizable with an incredible level of precise facial
+          expressions and offering a new standard of personalization.
         </p>
       </div>
     </div>

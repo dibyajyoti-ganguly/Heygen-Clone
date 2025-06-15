@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import GradientDrip from "./components/GradientDrip";
+import AvatarContainer from "./components/AvatarContainer";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <GradientDrip />
+      <AvatarContainer />
     </div>
   );
 };
