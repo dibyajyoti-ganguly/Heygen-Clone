@@ -2,6 +2,7 @@ import { useRef } from "react";
 import HerovideoEnglish from "../assets/HeroEnglish2.webm";
 import Biodata from "./Biodata";
 import Languages from "./Languages";
+import AutoscrollList from "./AutoscrollList";
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -24,6 +25,7 @@ const Hero = () => {
       {/* Overlay content */}
       <Biodata />
       <Languages videoRef={videoRef} />
+      <AutoscrollList />
     </div>
   );
 };
