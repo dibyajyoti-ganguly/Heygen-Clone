@@ -40,7 +40,7 @@ const LogoScroller = () => {
         `}
       </style>
 
-      <div className="whitespace-nowrap animate-[scroll_17s_linear_infinite] inline-block">
+      <div className="whitespace-nowrap animate-[scroll_25s_linear_infinite] inline-block">
         {[...logos, ...logos].map((logo, idx) => (
           <img
             key={idx}

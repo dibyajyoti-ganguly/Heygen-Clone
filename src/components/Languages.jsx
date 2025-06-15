@@ -5,7 +5,7 @@ import HerovideoGerman from "../assets/HeroGerman2.webm";
 
 const Languages = ({ videoRef }) => {
   return (
-    <div className="absolute z-10 w-1/8 right-16 mt-32 bg-white py-8 rounded-4xl shadow-2xl flex flex-col items-center font-noto text-xl font-medium">
+    <div className="absolute z-10 w-1/8 right-16 mt-32 pr-5 bg-white py-8 rounded-4xl shadow-2xl flex flex-col items-center font-noto text-xl font-medium">
       <button
         className="cursor-pointer"
         onClick={() => {

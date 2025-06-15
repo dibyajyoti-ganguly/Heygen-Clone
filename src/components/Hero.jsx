@@ -26,6 +26,11 @@ const Hero = () => {
       <Biodata />
       <Languages videoRef={videoRef} />
       <AutoscrollList />
+      <div className="flex justify-center absolute z-10 w-full bottom-16 font-micro text-xl font-medium">
+        <h1>
+          Trusted over by <span className="font-black">85000+ customers</span>
+        </h1>
+      </div>
     </div>
   );
 };
