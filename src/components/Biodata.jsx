@@ -17,7 +17,10 @@ const Biodata = () => {
         the future.
       </p>
       <br />
-      <button className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white font-medium py-2 px-4 rounded-full flex items-center gap-2 cursor-pointer">
+      <button
+        onClick={() => (window.location.href = "https://app.heygen.com/signup")}
+        className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white font-medium py-2 px-4 rounded-full flex items-center gap-2 cursor-pointer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-4 w-4 fill-white"

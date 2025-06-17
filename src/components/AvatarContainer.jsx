@@ -14,7 +14,7 @@ const avatarList = [
 
 const AvatarContainer = () => {
   return (
-    <div className="flex flex-wrap justify-evenly mx-28 mb-5">
+    <div className="flex flex-wrap justify-evenly mx-28 my-5">
       {avatarList.map((item) => {
         return <Avatar data={item} />;
       })}

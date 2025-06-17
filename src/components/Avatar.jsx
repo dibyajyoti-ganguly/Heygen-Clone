@@ -1,9 +1,12 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import play from "../assets/play-button.png";
+import pause from "../assets/pause.png";
 
 const Avatar = (props) => {
+  const [click, setClick] = useState(0);
   const videoRef = useRef(null);
   const link = props.data;
+
   return (
     <div className="relative w-[300px] h-[300px] mb-6 rounded-4xl overflow-hidden">
       <video
@@ -16,6 +19,7 @@ const Avatar = (props) => {
       />
       <button
         onClick={() => {
+          setClick(!click);
           const video = videoRef.current;
           if (video.paused) {
             video.play();
@@ -28,7 +32,7 @@ const Avatar = (props) => {
         }}
         className="absolute ml-4 w-[47px] h-[47px] bottom-5 bg-gray-100 rounded-full flex items-center justify-center"
       >
-        <img src={play} className="w-4" />
+        <img src={click ? pause : play} className="w-4" />
       </button>
     </div>
   );

@@ -55,7 +55,7 @@ const GradientDrip = () => {
         </p>
       </div>
 
-      <div className="absolute z-10 mx-36 bottom-12 font-noto w-[550px] text-shadow-xs">
+      <div className="absolute z-10 mx-36 bottom-16 font-handwriting w-[550px] tracking-wider text-shadow-lg">
         <p>
           <span className="font-bold">
             The most realistic avatars ever created.
