@@ -24,7 +24,7 @@ const CarouselContainer = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-between mx-28 mb-36">
+    <div className="flex flex-wrap justify-between mx-28 mb-48">
       {videos.map((item, index) => (
         <Carousel data={item} index={index} />
       ))}

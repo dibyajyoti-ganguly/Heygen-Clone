@@ -1,5 +1,3 @@
-import React from "react";
-
 const Carousel = (props) => {
   const link = props.data.link;
   const title = props.data.title;
