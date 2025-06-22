@@ -24,11 +24,25 @@ const CarouselContainer = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-between mx-28 mb-48">
-      {videos.map((item, index) => (
-        <Carousel data={item} index={index} />
-      ))}
-    </div>
+    <>
+      {/* Desktop view - unchanged */}
+      <div className="hidden md:flex flex-wrap justify-between mx-28 mb-48">
+        {videos.map((item, index) => (
+          <Carousel key={index} data={item} index={index} />
+        ))}
+      </div>
+
+      {/* Mobile view - horizontal scrollable */}
+      <div className="md:hidden mb-48 mt-16 px-4">
+        <div className="flex overflow-x-auto overflow-y-hidden gap-24 pb-4 scrollbar-hide">
+          {videos.map((item, index) => (
+            <div key={index} className="flex-shrink-0 w-[calc(100vw-2rem)]">
+              <Carousel data={item} index={index} isMobile={true} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

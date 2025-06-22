@@ -14,10 +14,12 @@ const avatarList = [
 
 const AvatarContainer = () => {
   return (
-    <div className="flex flex-wrap justify-evenly mx-28 my-5">
-      {avatarList.map((item) => {
-        return <Avatar data={item} />;
-      })}
+    <div className="flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-visible gap-x-14 md:gap-x-0 md:justify-evenly px-4 md:px-28 py-6">
+      {avatarList.map((item, index) => (
+        <div key={index} className="flex-shrink-0 w-64 md:w-auto">
+          <Avatar data={item} />
+        </div>
+      ))}
     </div>
   );
 };

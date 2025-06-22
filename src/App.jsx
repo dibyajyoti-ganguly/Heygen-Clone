@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div>
+    <div className="w-full overflow-hidden">
       <Navbar />
       <Hero />
       <GradientDrip />

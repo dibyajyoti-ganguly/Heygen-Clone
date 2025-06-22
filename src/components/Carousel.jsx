@@ -4,7 +4,7 @@ const Carousel = (props) => {
   const description = props.data.description;
   const index = props.index;
   return (
-    <div className="relative h-[600px] w-[380px] scale-[1.05] shadow-2xl transition-all duration-500">
+    <div className="relative h-[600px] w-full md:w-[380px] scale-[1.05] shadow-2xl transition-all duration-500">
       <video
         src={link}
         autoPlay
