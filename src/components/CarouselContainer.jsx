@@ -33,7 +33,7 @@ const CarouselContainer = () => {
       </div>
 
       {/* Mobile view - horizontal scrollable */}
-      <div className="md:hidden mb-48 mt-16 px-4">
+      <div className="md:hidden mb-28 mt-16 px-4">
         <div className="flex overflow-x-auto overflow-y-hidden gap-24 pb-4 scrollbar-hide">
           {videos.map((item, index) => (
             <div key={index} className="flex-shrink-0 w-[calc(100vw-2rem)]">

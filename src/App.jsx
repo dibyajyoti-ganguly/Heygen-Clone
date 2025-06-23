@@ -16,7 +16,9 @@ const App = () => {
       <Quote />
       <CarouselContainer />
       <hr className="w-full border-2 border-zinc-200 opacity-70" />
-      <Footer />
+      <div className="hidden md:block">
+        <Footer />
+      </div>
     </div>
   );
 };
